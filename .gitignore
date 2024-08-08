@@ -1,0 +1,28 @@
+# Ignorar arquivos de classe Java
+*.class
+
+# Ignorar pacotes Java arquivados
+*.jar
+*.war
+*.ear
+
+# Ignorar diretórios de compilação comuns
+/bin/
+/out/
+/target/
+/build/
+
+# Ignorar arquivos de configuração específicos de IDEs
+/.idea/
+/*.iml
+/.classpath
+/.project
+/.settings/
+/target/
+/.gradle/
+/build/
+
+# Ignorar dependências baixadas
+/lib/
+/mvnw/
+/mvnw.cmd
