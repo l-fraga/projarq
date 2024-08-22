@@ -1,4 +1,4 @@
-package com.exemplo.soma;
+package com.example.soma;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

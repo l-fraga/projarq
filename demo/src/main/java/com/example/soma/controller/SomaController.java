@@ -1,4 +1,4 @@
-package com.exemplo.soma.controller;
+package com.example.soma.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
