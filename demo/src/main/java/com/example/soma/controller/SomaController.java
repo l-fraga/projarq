@@ -1,7 +1,7 @@
 package com.example.soma.controller;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,14 +10,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class SomaController {
 
     @GetMapping("/soma")
-    public String showForm() {
-        return "somaForm";  // retorna o nome da página HTML (somaForm.html)
+    public String exibirFormulario() {
+        return "soma";  // Nome do arquivo HTML sem a extensão .html
     }
 
     @PostMapping("/soma")
-    public ResponseEntity<String> somar(@RequestParam int num1, 
-                        @RequestParam int num2) {
+    public String somar(@RequestParam("num1") int num1,
+                        @RequestParam("num2") int num2,
+                        Model model) {
         int resultado = num1 + num2;
-        return ResponseEntity.ok("Resultado: " + resultado);
+        model.addAttribute("resultado", resultado);
+        return "soma";  // Retorna para o mesmo template para exibir o resultado
     }
 }
