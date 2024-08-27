@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class SomaController {
 
-    @GetMapping("/")
+    @GetMapping("/soma")
     public String showForm() {
         return "somaForm";  // retorna o nome da página HTML (somaForm.html)
     }
