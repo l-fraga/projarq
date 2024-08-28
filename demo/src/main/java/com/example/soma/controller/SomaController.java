@@ -11,7 +11,7 @@ public class SomaController {
 
     @GetMapping("/soma")
     public String showForm() {
-        return "somaForm";  // Nome do arquivo HTML sem a extensão .html
+        return "soma";  // Nome do arquivo HTML sem a extensão .html
     }
 
     @PostMapping("/soma")
